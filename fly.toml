@@ -1,15 +1,16 @@
-# fly.toml app configuration file generated for yelpcamp-wild-night-9251 on 2024-07-06T09:58:00+09:00
+# fly.toml app configuration file generated for yelpcamp-white-flower-1296 on 2024-07-07T17:36:05+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'yelpcamp-wild-night-9251'
+app = 'yelpcamp-white-flower-1296'
 primary_region = 'nrt'
 
 [build]
+  image = 'keita953/yelpcamp:latest'
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
